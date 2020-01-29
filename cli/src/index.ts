@@ -10,13 +10,13 @@ class ReactSpark extends Command {
     {name: 'appName'},
   ];
 
-  private SOURCE_TS = path.join(__dirname, '..', '/templates/ts');
+  private SOURCE_TS = path.join(__dirname, '../..', '/templates/ts');
 
-  private SOURCE_TS_REDUX = path.join(__dirname, '..', '/templates/ts-redux');
+  private SOURCE_TS_REDUX = path.join(__dirname, '../..', '/templates/ts-redux');
 
-  private SOURCE_REDUX = path.join(__dirname, '..', '/templates/redux');
+  private SOURCE_REDUX = path.join(__dirname, '../..', '/templates/redux');
 
-  private SOURCE_BASIC = path.join(__dirname, '..', '/templates/basic');
+  private SOURCE_BASIC = path.join(__dirname, '../..', '/templates/basic');
 
   /**
    * Converts app name to valid directory name
@@ -24,7 +24,7 @@ class ReactSpark extends Command {
    * @param appname
    */
   cleanAppName(appname: string) {
-    return appname.trim().toLowerCase().replace(/[^a-zA-Z0-9]/g, '')
+    return appname.trim().replace(/[^a-zA-Z0-9]/g, '')
   }
 
   async run() {
@@ -32,8 +32,11 @@ class ReactSpark extends Command {
 
     const createNewApp = async (appName: string) => {
       this.log(`Creating new app ${appName}`);
+
+      // TODO: add this back in after Redux template is working properly
       // const includeRedux = await cli.prompt('Include Redux? (Y/n)');
       const includeRedux = false;
+
       const includeTypescript = await cli.prompt('Use Typescript? (Y/n)');
 
       if (includeRedux && includeTypescript)

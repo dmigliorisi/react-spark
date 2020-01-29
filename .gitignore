@@ -1,0 +1,13 @@
+*-debug.log
+*-error.log
+/.nyc_output
+/dist
+/lib
+/package-lock.json
+/tmp
+.next
+/cli/node_modules
+/templates/basic/node_modules
+/templates/ts/node_modules
+/templates/ts-redux/node_modules
+/templates/redux/node_modules

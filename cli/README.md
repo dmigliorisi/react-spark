@@ -1,7 +1,7 @@
 react-spark
 ===========
 
-React rapid development boilerplate for interview assignments
+Custom built React Boilerplate for rapid interview assignment development.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/react-spark.svg)](https://npmjs.org/package/react-spark)
@@ -15,18 +15,7 @@ React rapid development boilerplate for interview assignments
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g react-spark
-$ spark COMMAND
-running command...
-$ spark (-v|--version|version)
-react-spark/0.0.0 darwin-x64 node-v10.15.0
-$ spark --help [COMMAND]
-USAGE
-  $ spark COMMAND
-...
+    $ npm install -g react-spark
+    $ spark [appName]
 ```
 <!-- usagestop -->
-# Commands
-<!-- commands -->
-
-<!-- commandsstop -->
